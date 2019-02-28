@@ -1,0 +1,55 @@
+\documentclass{beamer}
+
+\usepackage[french]{babel}
+\usepackage[OT1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+\usetheme{AnnArbor}
+\title[Projet de fin d'année]{Gestion des rendez-vous d'une clinique}
+\institute[L1-TDSI]{Faculté des Sciences et Technique(FST)/Département Maths-Info\\Laboratoire d'Algèbre de Cryptographie de Géométrie Algébrique et Application(LACGAA)\\Transmission des Données et Sécurité de l'Information\\(TDSI)}
+\author[Licence 1 / 2018]{\textcolor{magenta}{REALISER PAR} :\\Ali Houssene Silahi\\Cheikh Tidiane Thiam\\Thierno Mamoudou Sabaly}
+\date{}
+
+\begin{document}
+\begin{frame}
+\includegraphics[scale=0.45]{Logolacgaa.png}
+\titlepage
+\end{frame}
+\begin{frame}{Introduction}
+La gestion  s’oriente dans un cadre de planification et de contrôle. \pause
+Posons nous la question à savoir comment gérons nous nos rendez-vous?\\ \pause
+Réponse  immédiate: nous utilisons des \textcolor{green}{ bloc-notes}\\ \pause
+ces dreniers sont  de moins en moins user devant  les agendas, qui sont au préalable munis d'un \textcolor{blue}{calendrier}.Les agendas sont en plus un peu orientés dans le sens de notre sujet d'aujourd'hui…\\ \pause
+De ce fait, nous avons convenu de créer une application de type agenda(agenda électronique)  qui s’orientera dans la gestion  des rendez-vous d’une clinique. \pause Elle contiendra au préalable le \textcolor{blue}{planning de tout le personnel} pour permettre de savoir, par exemple, si un médecin X sera libre à une date A …
+\end{frame}
+
+\begin{frame}{Fonctionnalités}
+L’application aura :\\
+\begin{enumerate}
+\item Une page d’accueille avec une brève présentation de la clinique, un menu comportant l’ensemble des départements de la clinique (si la clinique est non spécialisée), un logo, les contacts… \pause
+\item Pour un département donné vous trouverez l’ensemble du personnel dans le secteur. Pour prendre rendez-vous, il faudra choisir un personnel.\pause
+\item Chez chaque personnel, se trouve son emploi du temps avec ces heures de rendez-vous, l’application prendra en compte les dates déjà prises. Donc on inscrit le client par son nom, prénom, âge, sexe, adresse, contact. \pause
+\item Tout client inscrit se verra attribuez un numéro de rendez-vous et ticket où sera marquée la date du rendez-vous, le médecin et ses contacts,  les renseignement sur le client.\pause
+\item  L’application permettra aussi  de modifier, remplacer ou de supprimer des rendez-vous si nécessaires. Il y'aura d'autres fonctionnailités disponibles...
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Outils de developpement}
+Notre application sera programmée en C. \\
+Une idée de ce programme, c’est qu’il sera constitué d’un ensemble de fonctions du genre : \\
+\begin{enumerate}
+\item Fonction d’accueille \pause
+\item Fonction d’enregistrement \pause
+\item Fonction de suppression \pause
+\item Fonction de modification \pause
+\item …\\
+\end{enumerate}
+En gros ce sera un ensemble de fonctions chacune avec son rôle dans l’application. Il y’aura sans doute l’intervention des fichiers et tant d’autres éléments du langage C.
+\end{frame}
+\begin{frame}{Conclusion}
+\begin{block}{Résumons}
+Tous ceci se résumerait à la création d'une application aux objectifs primaires seraient de pouvoir \textbf{enregistrer} des rendez-vous, permettre la \textbf{suppression} ou la \textbf{modification} de certains si necessaire en tenant en compte le planning du personnel dans une clinique.\\Elle sera réalisée en C.
+\end{block} 
+\end{frame}
+
+\end{document}

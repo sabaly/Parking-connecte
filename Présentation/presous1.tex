@@ -1,0 +1,70 @@
+\documentclass{beamer}
+
+\usepackage[french]{babel}
+\usepackage[OT1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+\definecolor{macouleur}{rgb}{.255,.243,.202}
+\usecolortheme[named=macouleur]{structure}
+\usetheme{AnnArbor}
+\setbeamertemplate{blocks}[rounded, shadow=true]
+\setbeamercolor{block title alert}{fg=white, bg=pink}
+
+\title{Gestionnaire de rendez-vous}
+\subtitle{Agenda electronique}
+\institute[2017-2018]{Transmission des Données et Sécurité de l'Information}
+\date{}
+\author[L1TDSI]{Ali Houssene Silahi\\Cheikh Tidiane Thiam\\Thierno Mamoudou Sabaly}
+
+\begin{document}
+\begin{frame}[t]
+\includegraphics[scale=0.45]{Logolacgaa.png}
+	\titlepage
+\end{frame}
+\begin{frame}[t]{Introduction}\vspace{3pt}
+Toujours dans le cadre de notre projet portant sur la mise en place d'une application pour la gestion des rendez-vous dans une clinique, nous nous sommes penchés durant ces dernières semaines sur les questions primordiales que sont : 
+\textcolor{magenta}{\\Par où commencer?\pause \\Comment et où enregistrer les rendez-vous?\pause\\Comment modifier, supprimer ou afficher les rendez-vous....\\}
+Et nous sommes parvenu à apporter quelques réponses encourageantes.\\
+\end{frame}
+
+\begin{frame}{Qu'avions nous dit lors de la présentation?}
+Mais avant rappelons le mode de fonctionnement de l'application. \pause Surnommée \textbf{AGENDA ELECTRONIQUE}, elle sera une application destinée à la receptionniste de la clinique, qui se chargera de noter les rendez-vous. ces derniers parviendront aux medecins à travers un réseau locale. \pause \\Le but ultime de l'application est de pouvoir enregistrer, modifier et supprimer des rendez-vous. Comme va l'illustrer notre application en console. 
+
+\end{frame}
+\begin{frame}[t]{Par où commencer?}\vspace{3pt}
+Au tout début, nous avions beaucoups de questions et de suggestions chacun au point de nous perdre dans l'échange des idées. Alors nous avons juger utile de matérialiser ces dernières. \pause Pour faire simple à travers une console.\pause \\
+Nous avons ainsi abouti à une \textcolor{red}{application console} illustrant l'enregistrement, la modification, la suppression et l'affichage des rendez-vous.\\ 
+\end{frame}
+
+\begin{frame}[t]{Test de L'application}
+Un patient est une structure caractérisée par son nom, prenom, age, sexe puis son rendez-vous qui est aussi une structure caracérisée par le jours et l'heure de rendez-vous. Un patient sera enregistrer dans un fichier binaire contenu dans le dossier d'un des medecins selon celui choisi.\\Ce sont ces dossiers que les medecins retrouveront dans le réseau locale.\\Il devient ainsi facile de réaliser les fonctions de base de l'application. \\ 
+
+\begin{block}{\textcolor{blue}{Test}}
+ Nous allons lancer l'application en console et tester chacune de ses fonctions\pause
+\end{block}
+\end{frame}
+\begin{frame}[t]{A venir}
+Maintenant nous savons comment réaliser les fonctions de base.\pause 
+\begin{alertblock}{\textcolor{red}{???}}
+Tout semble aller bien, mais d'autres questions restent sans réponses.
+ Des questions secondaires mais aussi importantes comme \textcolor{red}{quand un client peut prendre rendez-vous, l'espacement entre les rendez-vous ou le nombre maximum de rendez-vous...}\pause 
+\end{alertblock}
+\begin{block}{\textcolor{magenta}{Etre réaliste}}
+Pour plus de réalisme, les réponses à ces questions doivent venir d'une clinique. Selon ces réponses, de nouvelles fonctionnalités pourrons voir jours.\pause 
+\end{block}
+\begin{block}{\textcolor{pink}{Le problème des binaires}}
+Remarquons que les fichiers enregistrés sont binaires. \textcolor{red}{Comment les medecins vont les lire}? \pause 
+\end{block}
+\end{frame}
+
+\begin{frame}[t]{A venir}
+ \textcolor{green}{\textbf{Solution}} : nous accompagnons notre application d'un lecteur de fichiers binaires que nous mettrons en place pour les medecins.
+\begin{block}{\textcolor{blue}{La fenêtre}}
+L'application ne s'arrête pas là ! \\En effet, il restera la dernière touche qui consistera à intégrer tout ceci dans une fenêtre. C'est ce qu'on fera en dernier lieu avec la SDL. On peut alors nous douter que le code source subira beaucoup de modifications. C'est vrai, mais le principe restera le même. 
+\end{block}
+\end{frame}
+
+\begin{frame}{Conclusion}
+Nous sommes parvenus à réaliser les fonctions de base et les avons illustrer dans une applications en console. Pour plus de réalisme nous comptons chercher des informations auprès d'une clinique sur leur système de gestion des rendez-vous. Ce qui permettra d'améliorer notre programme et de l'integrer dans une fenêtre grace à la SDL.  \\
+\end{frame}
+\end{document}
