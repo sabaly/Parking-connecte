@@ -1,1 +1,4 @@
-Prejet_de_fin_dannee
+# Technologies
+`Arduino`, `Raspberry pi`, `RFID`, ̀Servo moteur`
+# Langages
+Arduino, C, Python
