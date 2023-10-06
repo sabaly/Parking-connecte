@@ -1,4 +1,4 @@
 # Technologies
-`Arduino`, `Raspberry pi`, `RFID`, ̀Servo moteur`
+`Arduino`, `Raspberry pi`, `RFID`, `Servo moteur`
 # Langages
 Arduino, C, Python
